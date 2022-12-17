@@ -1,0 +1,21 @@
+const app = require("../app");
+const port = process.env.PORT || 3000;
+const mongoose = require("mongoose");
+const connect = require("../config/index");
+require("dotenv").config();
+
+app.listen(port, () => {
+  console.log(`server started on port ${port}`);
+});
+
+connect
+  .then(
+    console.log(
+      "Successfully connect to MongoDB",
+      mongoose.connection.readyState,
+      process.env.MONGODB_URI
+    )
+  )
+  .catch((error) => {
+    console.log(error);
+  });

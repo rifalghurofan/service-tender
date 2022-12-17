@@ -1,0 +1,655 @@
+{
+	"info": {
+		"_postman_id": "79871358-755e-4e2e-a2b6-cc43e2d44177",
+		"name": "tenders_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21395114"
+	},
+	"item": [
+		{
+			"name": "Member",
+			"item": [
+				{
+					"name": "getMember",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/members",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"members"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6343c718f4f05c97d6906585",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "google_id",
+									"value": "naohr02rh1rn1r",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "agen1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "agen1@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "birth",
+									"value": "10/10/2000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/members/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"members",
+								"signup"
+							],
+							"query": [
+								{
+									"key": "google_id",
+									"value": "absfoahwfb12rh120rg",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "agen1",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "agen1@mail.com",
+									"disabled": true
+								},
+								{
+									"key": "birth",
+									"value": "10/10/2000",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activateMember",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/members/activate?id=63490e3f90021a4a6d7d58d7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"members",
+								"activate"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "63490e3f90021a4a6d7d58d7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tender",
+			"item": [
+				{
+					"name": "daftarInformasi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/tenders",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6344cb62d00853d4a9ac000a",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hubungiAgen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_id",
+									"value": "63464421107faee80ba6c689",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "user1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "property_id",
+									"value": "wgqhj2",
+									"type": "text"
+								},
+								{
+									"key": "property_name",
+									"value": "rumah aing",
+									"type": "text"
+								},
+								{
+									"key": "property_address",
+									"value": "jember kavling",
+									"type": "text"
+								},
+								{
+									"key": "has_schedule",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "meet_up_at",
+									"value": "12/10/2022",
+									"type": "text"
+								},
+								{
+									"key": "type_survey",
+									"value": "penawaran",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "jono",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/tenders/add",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hubungiAgenDenganQR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_id",
+									"value": "6343c1b82988eddd98ae42e0",
+									"type": "text"
+								},
+								{
+									"key": "agen_id",
+									"value": "6343c718f4f05c97d6906585",
+									"type": "text"
+								},
+								{
+									"key": "property_id",
+									"value": "awh2i1hr",
+									"type": "text"
+								},
+								{
+									"key": "property_name",
+									"value": "adalah rumah",
+									"type": "text"
+								},
+								{
+									"key": "property_address",
+									"value": "jember lor",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "jono",
+									"type": "text"
+								},
+								{
+									"key": "agen_name",
+									"value": "joko",
+									"type": "text"
+								},
+								{
+									"key": "has_schedule",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "meet_up_at",
+									"value": "15/10/2022",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/tenders/addQR",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders",
+								"addQR"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "6343c1b82988eddd98ae42e0",
+									"disabled": true
+								},
+								{
+									"key": "agen_id",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "property_id",
+									"value": "a9u142in1o42",
+									"disabled": true
+								},
+								{
+									"key": "property_name",
+									"value": "ruma",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agen",
+			"item": [
+				{
+					"name": "acceptTender",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "63490d71279b54eb69c3c065",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "63490e3f90021a4a6d7d58d7",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "accept",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/tenders/action",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders",
+								"action"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rejectTender",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "6343cb00eee36b815c4f7224",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "6343c1b82988eddd98ae42e0",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "reject",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/tenders/action",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders",
+								"action"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProperty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/property",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"property"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addBookmark",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "63464421107faee80ba6c689",
+									"type": "text"
+								},
+								{
+									"key": "property_id",
+									"value": "jrkjg3k134j3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/property/bookmark",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"property",
+								"bookmark"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "daftarAgenTender",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/tenders/daftar?id=63464421107faee80ba6c689",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders",
+								"daftar"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "63464421107faee80ba6c689"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agenda",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userId",
+									"value": "63490e3f90021a4a6d7d58d7",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "agen",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/tenders/agenda",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders",
+								"agenda"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "pilihAgenTender",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "63490d71279b54eb69c3c065",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "63490e3f90021a4a6d7d58d7",
+									"type": "text"
+								},
+								{
+									"key": "agen_name",
+									"value": "joko",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/tenders/accept",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders",
+								"accept"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "aturJadwalSurvey",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "6344e3895de60900d4c9ae25",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "12/10/2022",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "offline",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/tenders/schedule",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders",
+								"schedule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "daftarTender",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "agenda",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userId",
+									"value": "63464421107faee80ba6c689",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "client",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/tenders/agenda",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tenders",
+								"agenda"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
